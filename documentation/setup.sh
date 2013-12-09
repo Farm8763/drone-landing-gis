@@ -1,3 +1,7 @@
+#install grass
+sudo apt-get install grass
+
+#setup environment variables
 export GISBASE="/usr/lib/grass64"
 export PATH="$PATH:$GISBASE/bin:$GISBASE/scripts"
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$GISBASE/lib"
