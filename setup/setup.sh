@@ -1,4 +1,4 @@
-export GISBASE="/usr/local/grass-6.4.svn/"
+export GISBASE="/usr/lib/grass64"
 export PATH="$PATH:$GISBASE/bin:$GISBASE/scripts"
 export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$GISBASE/lib"
 # for parallel session management, we use process ID (PID) as lock file number:
