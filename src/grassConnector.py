@@ -62,6 +62,6 @@ class grassConnector():
             for i in range(len(parse)):
                 if not parse[i] == "":
                     result.append(parse[i])
-            # Finally retun the results.
+            # Finally return the results.
             return result
         
