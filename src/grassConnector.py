@@ -53,14 +53,4 @@ class grassConnector():
             desc = g.parse_command('db.describe', flags='c', table=FeatNam)
             return(dict.keys(desc))
         
-        def getVectorMap():
-            # Parse the command and get results from the GRASS module.
-            parse = dict.keys(g.parse_command("g.list", _type="vect"))[3].split(" ")
-            # Create a null object to store names of vector maps.
-            result = []
-            # Add a name of vector map when the value is not empty.
-            for i in range(len(parse)):
-                if not parse[i] == "":
-                    result.append(parse[i])
-            # Finally retun the results.
-            return result
+        
