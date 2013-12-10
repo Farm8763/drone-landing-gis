@@ -1,5 +1,6 @@
 #install grass
 sudo apt-get install grass
+sudo apt-get install grass-dev
 
 #setup environment variables
 export GISBASE="/usr/lib/grass64"
