@@ -8,5 +8,6 @@ sys.path.append('/root/git/drone-landing-gis/src')
 from grassConnector import grassConnector as grassGis
 
 grass = grassGis()
-#print grass.getVectorMap
-print grass.getDbInfo
+grass.printNum()
+#grass.getVectorMap()
+print grass.getDbInfo()

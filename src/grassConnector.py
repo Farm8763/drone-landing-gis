@@ -23,7 +23,9 @@ class grassConnector():
             self.loc = location
             self.mapset = mapset
             gsetup.init(self.gisbase, self.gisdb, self.loc, self.mapset)
-        
+        def printNum(self):
+            print "123"
+            
         def getDbInfo(self):
             dbinfo = g.parse_command('db.connect',flags="p")
             dbstat = {}
@@ -53,7 +55,7 @@ class grassConnector():
             desc = g.parse_command('db.describe', flags='c', table=FeatNam)
             return(dict.keys(desc))
         
-        def getVectorMap():
+        def getVectorMap(self):
             # Parse the command and get results from the GRASS module.
             parse = dict.keys(g.parse_command("g.list", _type="vect"))[3].split(" ")
             # Create a null object to store names of vector maps.

@@ -1,13 +1,16 @@
-#install grass
-sudo apt-get install grass
-sudo apt-get install grass-dev
+SPy
+Download: https://sourceforge.net/projects/spectralpython
 
-#setup environment variables
-export GISBASE="/usr/lib/grass64"
-export PATH="$PATH:$GISBASE/bin:$GISBASE/scripts"
-export LD_LIBRARY_PATH="$LD_LIBRARY_PATH:$GISBASE/lib"
-# for parallel session management, we use process ID (PID) as lock file number:
-export GIS_LOCK=$$
-# path to GRASS settings file
-export GISRC="$HOME/.grassrc6"
-export PYTHONPATH="$PYTHONPATH:$GISBASE/etc/python"
+Dependency
+Python 2.6+ 					Required (Note that SPy does not work with Python 3.x)
+NumPy 							Required
+sudo apt-get install python-numpy
+
+Python Imaging Library (PIL) 	Required if displaying or saving images
+http://effbot.org/downloads/Imaging-1.1.7.tar.gz
+python setup.py install
+
+wxPython 						Required if displaying images
+matplotlib 						Required if plotting spectra interactively
+IPython 						Required for interactive, non-blocking GUI windows
+PyOpenGL 						Required if calling view_cube or view_nd
