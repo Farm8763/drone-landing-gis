@@ -1,6 +1,3 @@
-SPy
-Download: https://sourceforge.net/projects/spectralpython
-
 Dependency
 Python 2.6+ 					Required (Note that SPy does not work with Python 3.x)
 NumPy 							Required
@@ -14,3 +11,7 @@ wxPython 						Required if displaying images
 matplotlib 						Required if plotting spectra interactively
 IPython 						Required for interactive, non-blocking GUI windows
 PyOpenGL 						Required if calling view_cube or view_nd
+
+SPy
+Download: https://sourceforge.net/projects/spectralpython
+sudo python setup.py install
