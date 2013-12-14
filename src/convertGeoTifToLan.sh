@@ -1,1 +1,2 @@
-gdal_translate -of LAN $2.tif $2.lan
+echo $1
+gdal_translate -of LAN $1.tif $1.lan
