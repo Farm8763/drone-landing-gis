@@ -5,7 +5,7 @@ import unsupervised_classification as uc
 import convertGeoTifToLan as convert
 
 projectDirectory = '/home/ryan/geoworkspace/git/gis-files/'
-tifFilePathNoFileType = projectDirectory + 'test/data/015029_0100_991101_l7_743_lcc00'
+tifFilePathNoFileType = projectDirectory + 'test/data/016028_0100_010825_l7_743_lcc00'
 lanFilePath = convert.convertGeoTifToLan(tifFilePathNoFileType)
 print "convertGeoTifToLan.sh file path: " + projectDirectory + 'src/convertGeoTifToLan.sh'
 myUnclass = uc.unclass(5, 20)
