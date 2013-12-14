@@ -6,8 +6,8 @@ class unclass:
         self.numClusters = numClusters
         self.numIterations = numIterations
         
-    def perform_clustering(self, file):
-        img = open_image(file).load()
+    def perform_clustering(self, filePath):
+        img = open_image(filePath).load()
         (self.map, self.clusters) = kmeans(img, self.numClusters, self.numIterations)
         
     def displayMap(self):
