@@ -1,4 +1,4 @@
-from spectral import *
+from spectral import kmeans, open_image, ndvi, view
 import pylab
 
 class unclass:
@@ -10,9 +10,13 @@ class unclass:
         img = open_image(filePath).load()
         (self.map, self.clusters) = kmeans(img, self.numClusters, self.numIterations)
         
-    def displayMap(self):
+    def saveKmeansMap(self, filePath):
         pylab.figure()
         pylab.hold(1)
         for i in range(self.clusters.shape[0]):
             pylab.plot(self.clusters[i])
-        pylab.show()
+        pylab.savefig(filePath + ".png")
+        
+    def performNDVI(self, filePath):
+        ndviMap = ndvi(filePath, 21, 43)
+        view(ndviMap)
