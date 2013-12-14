@@ -10,13 +10,17 @@ class unclass:
         img = open_image(filePath).load()
         (self.map, self.clusters) = kmeans(img, self.numClusters, self.numIterations)
         
-    def saveKmeansMap(self, filePath):
+    def saveKmeansMap(self, filePathNoType):
         pylab.figure()
         pylab.hold(1)
         for i in range(self.clusters.shape[0]):
             pylab.plot(self.clusters[i])
-        pylab.savefig(filePath + ".png")
+        pylab.savefig(filePathNoType + ".png")
         
     def performNDVI(self, filePath):
         ndviMap = ndvi(filePath, 21, 43)
         view(ndviMap)
+        
+    def displayLan(self, filePath):
+        img = open_image(filePath)
+        view(img)

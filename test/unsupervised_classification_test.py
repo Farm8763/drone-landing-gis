@@ -10,6 +10,7 @@ subprocess.call([projectDirectory + 'src/convertGeoTifToLan.sh', tifFilePathNoFi
 lanFilePath = tifFilePathNoFileType + ".lan"
 myUnclass = uc.unclass(5, 10)
 print ".lan image file path: " + lanFilePath
+myUnclass.displayLan(lanFilePath)
 myUnclass.perform_clustering(lanFilePath)
 myUnclass.saveKmeansMap(tifFilePathNoFileType)
-myUnclass.performNDVI(lanFilePath)
+#myUnclass.performNDVI(lanFilePath)
