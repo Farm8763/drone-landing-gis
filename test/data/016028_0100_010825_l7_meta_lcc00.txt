@@ -1,0 +1,53 @@
+Landsat 7 Orthoimage product metadata
+#
+Product_id - 016028_0100_010825_L7
+Media_id/ control_source_id - 016028_0100_010825_L7_LCC00_TIF
+Product_Date - 2002/04/15
+Edition - 01
+Version - 00
+Number_of_pixels_panchro - 12900
+Number_of_lines_panchro - 13292
+Number_of_pixels_multi - 6450
+Number_of_lines_multi - 6646
+Number_of_pixels_thermal - 3225
+Number_of_lines_thermal - 3323
+LL latitude - 045.407493447
+LL longitude - -077.51547165
+UL latitude - 046.983898828
+UL longitude - -076.96695094
+LR latitude - 045.07473465
+LR longitude - -075.22660237
+UR latitude - 046.639872442
+UR longitude - -074.61548894
+Resampling - CC
+Datum - NAD83 (CSRS)
+Projection - LCC
+UTM_zone - 00
+Format - TIF
+Horizontal_Positional_Accuracy_Value - 22
+Digital_Elevation_Model_Accuracy_Value - 101
+Source_used_citation_abreviation - MultiSource
+Digital_Elevation_Model_source - Federal
+Originator - Geomatic Canada, Centre for Topographic Information / Géomatique Canada, Centre d'information topographique
+Comment - free text
+#
+Landsat 7 Raw image metadata
+#
+Raw_Image_Number - LE7016028000123750
+Path - 016
+Starting_row - 028
+Ending_row - 028
+Start_acquisition_date/time - 2001/08/25/ 15:39:10
+End_acquisition_date/time - 2001/08/25/ 15:39:47
+Raw_Image_Process - L1G
+Orientation - NOM
+Cloud_Percent - Less than 10%
+#
+Metadata_Reference_Information
+       Metadata_Date - 2002/04/15
+               Metadata_Review_Date - 2002/04/15
+ 
+ 
+ 
+ 
+ 
