@@ -1,16 +1,19 @@
 #!/usr/bin/python
+# ipython --pylab
+
 import unsupervised_classification as uc
-import subprocess
+import convertGeoTifToLan as convert
 
 projectDirectory = '/home/ryan/geoworkspace/git/gis-files/'
 tifFilePathNoFileType = projectDirectory + 'test/data/015029_0100_991101_l7_743_lcc00'
+lanFilePath = convert.convertGeoTifToLan(tifFilePathNoFileType)
 print "convertGeoTifToLan.sh file path: " + projectDirectory + 'src/convertGeoTifToLan.sh'
-print ".tif image file path: " + tifFilePathNoFileType
-subprocess.call([projectDirectory + 'src/convertGeoTifToLan.sh', tifFilePathNoFileType])
-lanFilePath = tifFilePathNoFileType + ".lan"
-myUnclass = uc.unclass(5, 10)
+myUnclass = uc.unclass(5, 20)
 print ".lan image file path: " + lanFilePath
-myUnclass.displayLan(lanFilePath)
-myUnclass.perform_clustering(lanFilePath)
-myUnclass.saveKmeansMap(tifFilePathNoFileType)
+#myUnclass.displayLan(lanFilePath)
+myUnclass.perform_kmeans_clustering(lanFilePath)
+#myUnclass.perform_single_pass_clustering(lanFilePath)
+myUnclass.saveKmeans(tifFilePathNoFileType)
+#myUnclass.saveSinglePassMap(tifFilePathNoFileType)
+#myUnclass.displayMap()
 #myUnclass.performNDVI(lanFilePath)
